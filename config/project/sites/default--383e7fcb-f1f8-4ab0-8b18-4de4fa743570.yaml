@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en
+name: 'Barney Gammond'
+primary: true
+siteGroup: 323f76e2-83a4-498c-9307-a2ad5dabc3a3 # Barney Gammond
+sortOrder: 1
