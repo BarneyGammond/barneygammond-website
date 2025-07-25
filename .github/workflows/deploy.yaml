@@ -1,0 +1,44 @@
+name: Deploy Craft CMS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup SSH agent
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: Install Composer Dependencies
+        run: composer install --no-dev --prefer-dist
+
+#      - name: Set up Node.js
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: '18'
+
+#      - name: Install Node Dependencies & Build
+#        run: |
+#          npm install
+#          npm run build
+
+      - name: Deploy to Server
+        env:
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+        run: |
+          rsync -avz --delete ./ $SERVER_USER@$SERVER_IP:/var/www/html/craft
+          ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "cd /var/www/html/craft && php craft migrate/all && php craft clear-caches/all"
