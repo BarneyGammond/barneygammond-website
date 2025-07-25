@@ -20,7 +20,7 @@ jobs:
       - name: Setup known_hosts
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan your.server.com >> ~/.ssh/known_hosts
+          ssh-keyscan 138.68.187.237 >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
       - name: Set up PHP
