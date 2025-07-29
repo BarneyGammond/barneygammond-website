@@ -46,5 +46,5 @@ jobs:
           SERVER_USER: ${{ secrets.SERVER_USER }}
           SERVER_IP: ${{ secrets.SERVER_IP }}
         run: |
-          rsync -avz --exclude='.env' --delete ./ $SERVER_USER@$SERVER_IP:/var/www/html/craft
+          rsync -avz --exclude='.env' --exclude='.git/' --delete ./ $SERVER_USER@$SERVER_IP:/var/www/html/craft
           ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "cd /var/www/html/craft && php craft migrate/all && php craft clear-caches/all"
