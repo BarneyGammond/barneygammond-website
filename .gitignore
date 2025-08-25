@@ -4,4 +4,9 @@
 .DS_Store
 .vscode
 /storage
-/web
+/node_modules
+/.parcel-cache
+
+## Web Folder
+/web/cpresources
+/web/.htaccess
