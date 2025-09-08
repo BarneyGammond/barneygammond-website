@@ -1,8 +1,11 @@
 {
   "name": "barneygammond-website",
   "version": "1.0.0",
-  "css": "dist/style.css",
+  "css": "web/dist/styles.css",
   "targets": {
+    "default": {
+      "distDir": "./web/dist"
+    },
     "css": {
       "source": "src/styles.css"
     }
@@ -63,10 +66,15 @@
     "weak-lru-cache": "^1.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel --dist-dir=./web/dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6"
+  }
 }

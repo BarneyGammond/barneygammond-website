@@ -1,3 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  html {
+    @apply font-sans;
+  }
+}
+
+@theme {
+  --color-gam-beige: #e4d8ac;
+  --color-gam-dark-beige: #cab588;
+  --color-gam-orange: #cf854b;
+  --color-gam-red: #a33f35;
+  --color-gam-dark-brown: #362d23;
+  --color-gam-dark-beige: #cab588;
+
+  --font-sans: "VT323", ui-sans-serif, sans-serif;
+}
