@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: e94b8221-90f0-4def-9b23-d127029169d9 # Skills
+handle: skills
+maxAuthors: 1
+name: Skills
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  383e7fcb-f1f8-4ab0-8b18-4de4fa743570: # Barney Gammond
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

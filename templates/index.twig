@@ -16,13 +16,18 @@
     <main class="w-120 mx-auto">
         <h1 class="font-light text-3xl">{{siteName}}</h1>
         <p class="text-lg mb-4">A well-rounded Developer with experience in agile startups, strong people skills and a keen interest in sustainability.</p>
+        {% set skillsEntries = craft.entries({
+            section: 'skills'
+        }) %}
         <div class="border-2 border-gam-text p-2 px-4">
             <div class="flex items-center gap-4">
-                <p>React</p>
-                <div class="w-full h-0 relative">
-                    <div class="w-100 absolute -top-0.5 border-2 border-gam-text opacity-25"></div>
-                    <div class="w-50 absolute -top-0.5 border-2 border-gam-text"></div>
-                </div>
+                {% for entry in skillsEntries.all() %}
+                    <p>{{entry.title}}</p>
+                    <div class="w-full h-0 relative">
+                        <div class="w-100 absolute -top-0.5 border-2 border-gam-text opacity-25"></div>
+                        <div class="w-{{10 * entry.score}} absolute -top-0.5 border-2 border-gam-text"></div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </main>
