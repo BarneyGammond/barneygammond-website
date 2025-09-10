@@ -1,4 +1,4 @@
-dateModified: 1753372175
+dateModified: 1757522898
 email:
   fromEmail: barney.gammond@gmail.com
   fromName: 'Barney Gammond'
@@ -8,6 +8,9 @@ meta:
     21d6040a-326c-4be6-809f-401eecb965bb: 'Public Schema' # Public Schema
     323f76e2-83a4-498c-9307-a2ad5dabc3a3: 'Barney Gammond' # Barney Gammond
     383e7fcb-f1f8-4ab0-8b18-4de4fa743570: 'Barney Gammond' # Barney Gammond
+    5266df1a-c99c-454f-a5ce-2919459ca9e6: Skills # Skills
+    e94b8221-90f0-4def-9b23-d127029169d9: Skills # Skills
+    fdd91d11-3f6b-45a0-9f37-492e58646bd3: Score # Score
 system:
   edition: solo
   live: true
