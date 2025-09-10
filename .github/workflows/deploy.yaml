@@ -36,10 +36,10 @@ jobs:
       #        with:
       #          node-version: '18'
 
-      #      - name: Install Node Dependencies & Build
-      #        run: |
-      #          npm install
-      #          npm run build
+      - name: Install Node Dependencies & Build
+        run: |
+          npm install
+          npm run build
 
       - name: Deploy to Server
         env:

@@ -67,7 +67,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx parcel --dist-dir=./web/dist"
+    "start": "npx parcel --dist-dir=./web/dist",
+    "build": "npx parcel build"
   },
   "keywords": [],
   "author": "",
