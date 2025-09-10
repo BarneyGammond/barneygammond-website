@@ -15,5 +15,7 @@
   --color-gam-dark-brown: #362d23;
   --color-gam-dark-beige: #cab588;
 
+  --color-gam-text: var(--color-gam-dark-brown);
+
   --font-sans: "VT323", ui-sans-serif, sans-serif;
 }
