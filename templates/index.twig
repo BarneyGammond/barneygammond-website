@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/dist/styles.css">
 </head>
 <body class="bg-gam-beige text-gam-text p-4">
-    <main class="w-120 mx-auto">
+    <main class="w-full sm:w-120 mx-auto">
         <h1 class="font-light text-3xl">{{siteName}}</h1>
         <p class="text-lg mb-4">A well-rounded Developer with experience in agile startups, strong people skills and a keen interest in sustainability.</p>
         {% set skillsEntries = craft.entries({
@@ -24,8 +24,8 @@
                 {% for entry in skillsEntries.all() %}
                     <p>{{entry.title}}</p>
                     <div class="w-full h-0 relative">
-                        <div class="w-100 absolute -top-0.5 border-2 border-gam-text opacity-25"></div>
-                        <div class="w-{{10 * entry.score}} absolute -top-0.5 border-2 border-gam-text"></div>
+                        <div class="w-full absolute -top-0.5 border-2 border-gam-text opacity-25"></div>
+                        <div class="w-{{entry.score}}/10 absolute -top-0.5 border-2 border-gam-text"></div>
                     </div>
                 {% endfor %}
             </div>
