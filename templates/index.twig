@@ -16,12 +16,14 @@
     <main class="w-full sm:w-120 mx-auto">
         <h1 class="font-light text-3xl">{{siteName}}</h1>
         <p class="text-lg mb-4">A well-rounded Developer with experience in agile startups, strong people skills and a keen interest in sustainability.</p>
-        {% set skillsEntries = craft.entries({
-            section: 'skills'
-        }) %}
+        {% set skillsEntries = craft.entries()
+            .section('skills')
+            .orderBy('score DESC')
+            .all()
+         %}
         <div class="border-2 border-gam-text p-2 px-4">
             <div class="flex flex-col gap-2">
-                {% for entry in skillsEntries.all() %}
+                {% for entry in skillsEntries %}
                     <div class="flex items-center">
                         <p class="w-25">{{entry.title}}</p>
                         <div class="w-full h-0 relative">
