@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 3d464ecc-e744-4848-b9a0-ee770d757f6b # Employment
+handle: employment
+maxAuthors: 1
+name: Employment
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  383e7fcb-f1f8-4ab0-8b18-4de4fa743570: # Barney Gammond
+    enabledByDefault: true
+    hasUrls: true
+    template: employment/_entry.twig
+    uriFormat: 'employment/{slug}'
+type: channel

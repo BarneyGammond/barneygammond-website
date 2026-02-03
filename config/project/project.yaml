@@ -1,16 +1,29 @@
-dateModified: 1757522898
+dateModified: 1770135897
 email:
   fromEmail: barney.gammond@gmail.com
   fromName: 'Barney Gammond'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    1c50737c-f2d7-4c81-808b-1577d3a3f7f3: 'Start Date' # Start Date
+    3d464ecc-e744-4848-b9a0-ee770d757f6b: Employment # Employment
+    5d700426-a11c-4d39-bf96-17b6d6d40c7d: 'Current Role' # Current Role
+    6bad410d-06aa-4ed7-a1a8-9969799714da: Employment # Employment
     21d6040a-326c-4be6-809f-401eecb965bb: 'Public Schema' # Public Schema
+    28b3dda6-a72d-43c1-abd1-3cfeecc489ab: Role # Role
     323f76e2-83a4-498c-9307-a2ad5dabc3a3: 'Barney Gammond' # Barney Gammond
     383e7fcb-f1f8-4ab0-8b18-4de4fa743570: 'Barney Gammond' # Barney Gammond
     5266df1a-c99c-454f-a5ce-2919459ca9e6: Skills # Skills
+    55174bf4-5702-4911-b2b1-c7d011631886: Description # Description
+    cca7654a-225a-47da-a9c4-a5cd08ee8d1c: Simple # Simple
     e94b8221-90f0-4def-9b23-d127029169d9: Skills # Skills
+    e5813420-a234-47fe-8892-8a30f55f6895: 'End Date' # End Date
     fdd91d11-3f6b-45a0-9f37-492e58646bd3: Score # Score
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
 system:
   edition: solo
   live: true

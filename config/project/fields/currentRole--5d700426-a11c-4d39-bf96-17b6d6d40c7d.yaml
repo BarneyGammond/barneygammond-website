@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: currentRole
+instructions: null
+name: 'Current Role'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
