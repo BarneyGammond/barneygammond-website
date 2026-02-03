@@ -11,7 +11,8 @@ This is a modern, content-managed website powered by Craft CMS 5 with styling bu
 - PHP 8.2+
 - Node.js 18+
 - Composer
-- npm or yarn
+- npm
+- [DDEV](https://ddev.com/get-started/)
 
 ## Installation
 
@@ -28,20 +29,22 @@ npm install
 ```
 
 ### 3. Set Up Environment
-
-Copy the example environment file:
+Run the following commands to import the ddev config, start the containers and install required packages.
 
 ```bash
-cp .env.example.dev .env
-```
+ddev config
 
-Update the `.env` file with your database and application settings.
+ddev start
+
+ddev composer install
+```
 
 ### 4. Initialize Craft CMS
 
 ```bash
-php craft install
+ddev craft install
 ```
+The .env will automatically be created with the necessary Craft values.
 
 ## Development
 
