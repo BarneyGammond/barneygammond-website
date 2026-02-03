@@ -31,10 +31,10 @@ jobs:
       - name: Install Composer Dependencies
         run: composer install --no-dev --prefer-dist
 
-      #      - name: Set up Node.js
-      #        uses: actions/setup-node@v3
-      #        with:
-      #          node-version: '18'
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
       - name: Install Node Dependencies & Build
         run: |
