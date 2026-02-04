@@ -2,10 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 3d464ecc-e744-4848-b9a0-ee770d757f6b # Employment
-handle: employment
+    uid: 3d464ecc-e744-4848-b9a0-ee770d757f6b # Jobs
+handle: jobs
 maxAuthors: 1
-name: Employment
+name: Jobs
 previewTargets:
   -
     __assoc__:

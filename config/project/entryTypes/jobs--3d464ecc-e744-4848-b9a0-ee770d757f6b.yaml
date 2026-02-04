@@ -55,6 +55,23 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-02-04T15:00:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b0f74cd3-7197-4d99-8a6c-6464d3195943 # Skills
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27816007-df7e-492a-a1a9-e01241394728
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2026-02-03T16:22:05+00:00'
             editCondition: null
             elementCondition: null
@@ -135,10 +152,10 @@ fieldLayouts:
         name: Content
         uid: 1bac93e0-3071-40a5-8d69-81615893221e
         userCondition: null
-handle: employment
+handle: jobs
 hasTitleField: true
 icon: null
-name: Employment
+name: Jobs
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
