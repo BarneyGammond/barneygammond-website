@@ -21,8 +21,8 @@ previewTargets:
 propagationMethod: all
 siteSettings:
   383e7fcb-f1f8-4ab0-8b18-4de4fa743570: # Barney Gammond
-    enabledByDefault: true
-    hasUrls: true
-    template: employment/_entry.twig
-    uriFormat: 'employment/{slug}'
+    enabledByDefault: false
+    hasUrls: false
+    template: null
+    uriFormat: null
 type: channel
