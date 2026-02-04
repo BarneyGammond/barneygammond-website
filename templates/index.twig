@@ -26,8 +26,9 @@
             .section('skills')
             .orderBy('score DESC')
             .all()
-         %}
-        <div class="border-2 border-gam-text p-2 px-4">
+        %}
+        {% if skillsEntries|length != 0 %}
+        <div class="border-2 border-gam-text p-2 px-4 mb-4">
             <div class="flex flex-col gap-2">
                 {% for entry in skillsEntries %}
                     {% set skillBarClasses = [
@@ -45,6 +46,39 @@
                     </div>
                 {% endfor %}
             </div>
+        </div>
+        {% endif %}
+        {% set jobsEntries = craft.entries()
+            .section('jobs')
+            .all()
+        %}
+        {% if jobsEntries|length != 0 %}
+        <div class="ml-2 mt-2 pl-4 border-l-2 border-gam-text">
+            {% for job in jobsEntries %}
+                <div class="py-2">
+                    <div class="relative flex justify-between">
+                        <div class="absolute -left-5.5 top-2.5 border-5 border-gam-text w-0"></div>
+                        <h2 class="font-bold text-xl">{{job.title}}</h2>
+                        <p>{{job.startDate|date("M Y")}} - 
+                            {% if job.currentRole %}
+                                Present
+                            {% else %}
+                                {{job.endDate|date("M Y")}}
+                            {% endif %}
+                    </div>
+                    <p class="font-bold mb-2">{{job.role}}</p>
+                    {% set jobSkills = job.skills.all() %}
+                    {% if jobSkills|length != 0 %}
+                    <div class="flex gap-1 flex-wrap mb-2">
+                    {% for skill in jobSkills %}
+                        <p class="bg-gam-text text-gam-beige px-2 py-1">{{skill.title}}</p>
+                    {% endfor %}
+                    </div>
+                    {% endif %}
+                    {{job.description}}
+                </div>
+            {% endfor %}
+        {% endif %}
         </div>
     </main>
 </body>

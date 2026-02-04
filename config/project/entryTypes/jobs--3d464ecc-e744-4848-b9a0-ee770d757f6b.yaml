@@ -1,0 +1,165 @@
+color: null
+description: null
+fieldLayouts:
+  87eb0750-10d1-44f7-b0fd-8480f37ab7fc:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-02-03T16:08:58+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 24f2455e-37fc-4e3a-bdd5-cca960298fc6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-02-03T16:10:36+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 28b3dda6-a72d-43c1-abd1-3cfeecc489ab # Role
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56b9fb63-5f52-4893-97f1-c9470b8053d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-02-04T15:00:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b0f74cd3-7197-4d99-8a6c-6464d3195943 # Skills
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27816007-df7e-492a-a1a9-e01241394728
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-02-03T16:22:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 55174bf4-5702-4911-b2b1-c7d011631886 # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e09b57f-d0cd-4f69-9dbd-e3cbbe788150
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-02-03T16:22:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1c50737c-f2d7-4c81-808b-1577d3a3f7f3 # Start Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ecbfc3a6-9d9e-441f-a436-6ae035b3a525
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-02-03T16:22:05+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 5d700426-a11c-4d39-bf96-17b6d6d40c7d # Current Role
+                  layoutElementUid: 8f9476a2-b50e-4f21-af15-09915808fbec
+                  uid: 3dd787b8-773b-4070-a4ab-c4ddbd15ce61
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: e5813420-a234-47fe-8892-8a30f55f6895 # End Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0c8166b-d7e3-4fd3-b2bd-569f60f10330
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-02-03T16:22:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5d700426-a11c-4d39-bf96-17b6d6d40c7d # Current Role
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f9476a2-b50e-4f21-af15-09915808fbec
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1bac93e0-3071-40a5-8d69-81615893221e
+        userCondition: null
+handle: jobs
+hasTitleField: true
+icon: null
+name: Jobs
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
